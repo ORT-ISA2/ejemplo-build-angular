@@ -27,5 +27,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Build
-        run: npm run build -- --prod
+        run: |
+          npm install
+          npm run build:prod
         working-directory: ./angular-app/
