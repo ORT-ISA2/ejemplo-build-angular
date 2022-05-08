@@ -29,5 +29,5 @@ jobs:
       - name: Build
         run: |
           npm install
-          npm run build:development
+          npm run build
         working-directory: ./angular-app/
